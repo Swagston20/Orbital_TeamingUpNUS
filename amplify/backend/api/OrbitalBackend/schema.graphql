@@ -1,0 +1,39 @@
+enum Modules {
+  IS2101
+  BT2102
+  ES2660
+  BT2103
+  IS3103
+  BT2201
+  BT3102
+  CS2102
+  CS2101
+  CS2103
+  BT4103
+}
+
+type Match @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  User1ID: ID!
+  User2ID: ID!
+  User1: User @hasOne
+  User2: User @hasOne
+  isMatch: Boolean!
+}
+
+enum Genders {
+  MALE
+  FEMALE
+  OTHER
+}
+
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  image: String
+  bio: String!
+  lookingFor: Modules!
+  sub: String!
+  module: Modules
+}
+ 
