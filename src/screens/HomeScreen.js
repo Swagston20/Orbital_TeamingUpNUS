@@ -76,6 +76,25 @@ const HomeScreen = ({isUserLoading}) => {
       return;
     }
 
+    const myMatches = await DataStore.query(Match, match =>
+      match.User1ID('eq', me.id).User2ID('eq', currentUser.id),
+    );
+    if (myMatches.length > 0) {
+      console.warn('You already swiped right to this user');
+      return;
+    }
+
+    const hisMatches = await DataStore.query(Match, match =>
+      match.User1ID('eq', currentUser.id).User2ID('eq', me.id),
+    );
+
+    if (hisMatches.length > 0) {
+      const hisMatch = hisMatches[0];
+      DataStore.save(
+        Match.copyOf(hisMatch, updated => (updated.isMatch = true)),
+      );
+      return;
+    }
 
     console.warn('Sending him a match request!');
     const newMatch = new Match({
