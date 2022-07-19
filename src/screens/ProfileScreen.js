@@ -174,7 +174,7 @@ const ProfileScreen = () => {
 
         <TextInput
           style={styles.input}
-          placeholder="bio..."
+          placeholder="bio... etc Telegram handle, major, CAP"
           multiline
           numberOfLines={3}
           value={bio}
