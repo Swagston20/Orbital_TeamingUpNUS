@@ -74,7 +74,7 @@ const MatchesScreen = () => {
             if (!match.User1 || !match.User2) {
               return (
                 <View style={styles.user} key={match.id}>
-                  <Image source={{}} style={styles.image} />
+                  <Image source={{uri: matchUser.image}} style={styles.image} />
                   <Text style={styles.name}>{matchUser.bio}</Text>
                 </View>
               );
