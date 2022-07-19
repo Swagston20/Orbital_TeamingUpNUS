@@ -75,14 +75,14 @@ const MatchesScreen = () => {
               return (
                 <View style={styles.user} key={match.id}>
                   <Image source={{}} style={styles.image} />
-                  <Text style={styles.name}>New match</Text>
+                  <Text style={styles.name}>{matchUser.bio}</Text>
                 </View>
               );
             }
             return (
               <View style={styles.user} key={match.id}>
                 <Image source={{uri: matchUser.image}} style={styles.image} />
-                <Text style={styles.name}>{matchUser.name}</Text>
+                <Text style={styles.name}>Pending</Text>
               </View>
             );
           })}
