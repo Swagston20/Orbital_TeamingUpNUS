@@ -3,35 +3,35 @@ export default [
     id: '1',
     name: 'Dog',
     image:
-      'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim1.JPG',
+      'https://i.pravatar.cc/150?img=48',
     bio: 'I will be the semicolons to your code',
   },
   {
     id: '2',
     name: 'Cat',
     image:
-      'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/elon.png',
+      'https://i.pravatar.cc/150?img=49',
     bio: 'A dude with a rocket is looking for a gal with fuel',
   },
   {
     id: '3',
-    name: 'Zack',
+    name: 'Zacky',
     image:
-      'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/zuck.jpeg',
+      'https://i.pravatar.cc/150?img=50',
     bio: 'No need to send me your nudes, I already saw them',
   },
   {
     id: '4',
-    name: 'Jeff',
+    name: 'Jeffery',
     image:
-      'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/jeff.jpeg',
-    bio: 'CEO, entrepreneur born in 1964, Jeffrey, Jeffrey Bezos',
+      'https://i.pravatar.cc/150?img=51',
+    bio: 'CEO, entrepreneur born in 2000',
   },
   {
     id: '5',
-    name: 'Vadim Savin',
+    name: 'Vladimir',
     image:
-      'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim1.JPG',
+      'https://i.pravatar.cc/150?img=52',
     bio: 'Hola',
   },
 ];
